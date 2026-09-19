@@ -1,0 +1,83 @@
+{
+  "fetchedAt": "2026-09-19T19:18:05.353Z",
+  "fetchedAtMs": 1789845485354,
+  "seconds": 17.8,
+  "rows": 10200,
+  "fiscalYear": 2024,
+  "source": "USASpending.gov federal awards (spending_by_award)",
+  "sourceUrl": "https://www.usaspending.gov/",
+  "apiUrl": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+  "licence": "United States government work (public domain)",
+  "columns": [
+    "id",
+    "amount",
+    "recipient",
+    "agency",
+    "subAgency",
+    "kind",
+    "awardType",
+    "description"
+  ],
+  "groups": [
+    {
+      "kind": "Contract",
+      "codes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "kind": "Grant",
+      "codes": [
+        "02",
+        "03",
+        "04",
+        "05"
+      ]
+    },
+    {
+      "kind": "Loan",
+      "codes": [
+        "07",
+        "08"
+      ]
+    },
+    {
+      "kind": "Direct payment",
+      "codes": [
+        "06",
+        "10"
+      ]
+    },
+    {
+      "kind": "Other",
+      "codes": [
+        "09",
+        "11"
+      ]
+    },
+    {
+      "kind": "IDV",
+      "codes": [
+        "IDV_A",
+        "IDV_B",
+        "IDV_B_A",
+        "IDV_B_B",
+        "IDV_B_C",
+        "IDV_C",
+        "IDV_D",
+        "IDV_E"
+      ]
+    }
+  ],
+  "rowsByKind": {
+    "Contract": 2000,
+    "Grant": 2000,
+    "Loan": 2000,
+    "Direct payment": 2000,
+    "IDV": 200,
+    "Other": 2000
+  }
+}
